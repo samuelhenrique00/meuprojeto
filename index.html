@@ -1,64 +1,133 @@
 <!DOCTYPE html>
 <html lang="pt br">
   <head>
-  
-    <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https: //fonts.googleapis.com/css2?family= Archivo: wght @600;700 &família = Poppins & display=swap" rel="stylesheet"> 
 
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-  <title>Moveis Customizados</title>
-
-<link href="https: //fonts.googleapis.com/css2?family= Inter:wght@400;700 & family = Open+Sans:wght@400;700 & display=swap" 
-rel="stylesheet">
+  <title>Crie Seu Evento</title>
 
     <link rel="stylesheet" href="style.css">
-
+    <link rel="preconnect" href="https://fonts.googleapis.com">
 </head>
 <body>
 
-  
-  <div id="hero">
-    
-    <img src="images/image 1 (1).jpg" alt="Desenho de uma pessoa de camisa amarela ">
-    
-    <h1>Ambientes <span>únicos</span> para voce</h1>
-    <p>
-      Nós criamos ambientes <strong> exclusívos</strong> e <strong> únicos,</strong> 
-      com muito bom gosto e profissionalismo,
-      investimos tempo e <span> dedicação no seu projeto.</span>
+  <div class="page">
+    <header>
+      <h1>Crie e compartilhe 
+        seu evento.</h1>
+      <p>O primeiro passo, é preencher esse
+        formulário de inscrição.</p>
+      </header>
+      <form id="form">
 
-     <br>
-     <br>
-     <br>
+  <fieldset>
+    <div class="fildset-wrapper">
+   <legend>Infomaçoes do Evento</fieldset> 
+   </fieldset>
+
+ 
       
-      <p>
-        <p>
-          Tenha <span>ambientes limpos</span> e bem decorados, 
-          transmitindo <strong> elegância  e finesse </strong> para todo 
-          aquele que estiver ali.
-        </p>
-      </div>
-      
-      <div id="footer">
+   <div class="input-wrapper">
+     <label for="event-email">Título do evento<span>(mínimo 8 caracteres)</span></label>
+     <input 
+     type="text" 
+     id="event-title"
+     required
+     maxlength="8" />
+     
+    </div>
+    
+    <div class="input-wrapper">
+      <label for="event-url">Link do Evento <span>(comece com https://)</span></label>
+      <input type="url" id="event-title"/>
+    </div>
+    
+    
+    <div class="input-wrapper">
+      <label for="event-url">Whatssaap para contato <span>(Somente números)</span></label>
+      <input type="text" id="event-title"/>
+    </div>
+    
+    <div class="input-wrapper">
+      <label for="event-info">Informações do extras</label>
+      <textarea id="event-info"></textarea>  
+    </div>  
+    
+    <div class="input-wrapper">
+      <label for="event-info">Categoria</label>
+      <select name="event-category">
+        <option value="Ao Vivo">Tipo do Evento</option> 
+        <option value="Podcast">Podcast</option>
+        <option value="Mentorship">Mentoria</option>
         
-        <div id="line"></div>
-        
-        <a 
-        target="_blank"
-        href="https://instagram.com/moveisparavoce">
-          Instagram
-        </a>
-        <a href="mailto:contato@moveisparavoce.com">
-          Fale conosco</a>
-          
+        <fieldset>
+          <div class="fildset-wrapper"></div>
+         <legend><p>Informações do Evento</p></fieldset> 
+          </select>
         </div>
 
-        <img
-        id="balls"
-         src="images/balls-decoration (3).svg" 
-         alt="Bolinhas no canto direito inferior da tela">           
-  </body>
+        <fieldset>
+          <div class="fildset-wrapper">
+         <legend>Privacidade</legend>
+         
+      <fieldset>        
+   <div class="input-wrapper">
+    <label for="event-email">Email do Administrador <span>(digite um email válido)</label>
+    <input type="text" id="event-title"/>
+   </div>
+
+   <fieldset>        
+    <div class="input-wrapper">
+     <label for="event-password">Senha de acesso para os participantes <span>(mínimo 8 caracteres)</label>
+     <input 
+     type="password"
+      id="event-password"
+      maxlength="8"/>
+    </div>
+
+    <fieldset>
+
+      <div class="checkbox-wrapper">
+        <input type="checkbox" id="event-private"/>
+        <label for="event-private">Evento privado</label>
+      </div>
+  
+
+    <fieldset>
+        <div class="fildset-wrapper">
+       <legend>Dia e Hora</legend>
+      </fieldset>
+
+      <div class="col-3">
+      <div class="input-wrapper">
+        <label for="event-data">Data</label>
+        <input type="date" id="event-data" />
+        </div>
+
+        <div class="input-wrapper">
+          <label for="event-password">Das</span></label>
+          <input type="time" id="event-title"/>
+         </div>
+         
+         <div class="input-wrapper">
+           <label for="event-password">Até</label>
+           <input type="time" id="event-title"/>
+          </div>
+          </fieldset>
+
+          
+       <footer>
+         <input
+         class="buttons"
+          type="submit"
+          form="form"
+          value="Salvar Evento">
+          
+  </footer>
+ </div>
+<body>
 </html>
+
